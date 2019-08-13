@@ -3,13 +3,13 @@ DROP TABLE IF EXISTS foods CASCADE;
 
 create table foods (
   id serial primary key,
-  foodName varchar not null,
+  foodname varchar not null,
   country text not null,
   img text not null,
   description text not null
 );
 
-insert into foods(foodName, country, img, description) values
+insert into foods(foodname, country, img, description) values
   ('Rendang', 'Indonesia', 'https://dynaimage.cdn.cnn.com/cnn/q_auto,w_634,c_fill,g_auto,h_357,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170306143659-rendang.jpg', 'Reader Kamal F Chaniago showed great foresight when he wrote, "Rendang is the best." A clear winner with a loyal following, this beefy dish can now rightfully claim the title of "Worlds Most Delicious Food." Beef is slowly simmered with coconut milk and a mixture of lemongrass, galangal, garlic, turmeric, ginger and chilies, then left to stew for a few hours to create this dish of tender, flavorful bovine goodness.The Indonesian dish is often served at ceremonial occasions and to honored guests. Its not only delicious but also comes with a simple recipe. If you havent already, go ahead and take reader Isabela Desitas advice: "Rendang should be the first! Its really nice, you should try!"'),
 
   ('Nasi goreng', 'Indonesia', 'https://dynaimage.cdn.cnn.com/cnn/q_auto,w_634,c_fill,g_auto,h_357,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170306143034-buba-nasi-goreng.jpg', '"I like rendang and nasi goreng, two of most popular food in Indonesia!" Reader Rizky Ramadhikas got it. And thousands of other voters agreed. The wonder of combining rice with egg, chicken and prawns strikes again. The second fried rice to make the list, this Indonesian delight received more than 10 times the vote of its Thai counterpart, propelling the former from non-runner to runner-up.'),
