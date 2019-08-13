@@ -1,0 +1,39 @@
+{
+	"name": "Foods",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node src/server.js",
+		"dev": "nodemon src/server.js",
+		"eslint": "eslint  **.**j",
+		"eslint:fix": "eslint **.**j --fix"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/95Rawan/Foods.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/95Rawan/Foods/issues"
+	},
+	"homepage": "https://github.com/95Rawan/Foods#readme",
+	"dependencies": {
+		"env2": "^2.2.2",
+		"express": "^4.17.1",
+		"express-handlebars": "^3.1.0",
+		"pg": "^7.12.0"
+	},
+	"devDependencies": {
+		"eslint": "^6.1.0",
+		"eslint-config-standard": "^13.0.1",
+		"eslint-plugin-import": "^2.18.2",
+		"eslint-plugin-node": "^9.1.0",
+		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-standard": "^4.0.0",
+		"nodemon": "^1.19.1"
+	}
+}
