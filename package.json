@@ -22,6 +22,7 @@
 	},
 	"homepage": "https://github.com/95Rawan/Foods#readme",
 	"dependencies": {
+		"alert-node": "^1.2.6",
 		"env2": "^2.2.2",
 		"express": "^4.17.1",
 		"express-handlebars": "^3.1.0",
