@@ -1,9 +1,9 @@
-const postMealData = require('./../database/queries/postMealData.js')
+const postSignupData = require('../database/queries/postSignupData')
+const alert = require('alert-node')
 const path = require('path')
 const fs = require('fs')
-const alert = require('alert-node')
 
-exports.getPostMealForm = (req, res) => {
+exports.getSignup = (req, res) => {
   const endpoint = req.originalUrl
   const filePath = path.join(__dirname, `../views${endpoint}.hbs`)
 
@@ -22,10 +22,10 @@ exports.getPostMealForm = (req, res) => {
   })
 }
 
-exports.postMeal = (req, res) => {
-  const { foodname, country, img, description } = req.body
-  postMealData(foodname, country, img, description)
-    .then(() => alert('The meal was successfuly added'))
+exports.postSignup = (req, res) => {
+  const { name, email, password } = req.body
+  postSignupData(name, email, password)
+    .then(() => alert('Signup was successful'))
     .then(() => res.redirect('/'))
     .catch(err => console.log(err))
 }
