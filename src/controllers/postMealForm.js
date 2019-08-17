@@ -1,4 +1,4 @@
-const postMealData = require('./../database/queries/postMealData.js')
+const postMealData = require('../database/queries/postMealData.js')
 const path = require('path')
 const fs = require('fs')
 const alert = require('alert-node')
